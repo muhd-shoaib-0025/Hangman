@@ -25,8 +25,6 @@ Hangman/
 ├─ create_train_data.py        # Simulate games and build arrays
 ├─ train_model.py              # Model, training loop, logging
 ├─ hangman_api_user.py         # Simple API/demo runner
-├─ requirements.txt
-├─ report/                     # PDF with details and figures
 └─ data/                       # Dictionary + generated tensors (gitignored if large)
 ```
 
@@ -107,12 +105,6 @@ Prints proposed letters with confidences across turns.
 
 **Notes on compute**
 - Short runs were used due to time limits; larger models or more epochs can improve accuracy
-
----
-
-## Reproducing analysis plots
-
-Training curves, LR schedule, confusion matrix, calibration, Top-K, bigrams, word-length histograms, and gameplay metrics can be regenerated from logs produced by `train_model.py`.
 
 ---
 
